@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Medicio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medicio
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    /* 🔹 Combined ITSM Scroller Section */
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      /* background: #f8f9fa; */
+      color: #212529;
+      height: 35px;
+      overflow: hidden;
+      /* border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6; */
+      white-space: nowrap;
+    }
+
+    /* Left Contact Info */
+    .topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 0 0 35%;
+      white-space: nowrap;
+      font-size: 14px;
+      /* color: #f3590c; */
+    }
+
+    .topbar-left i {
+      color: #baa36f;
+    }
+
+    /* Right Scroller */
+    .topbar-right {
+      flex: 1;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .hmove {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      animation: tickerh linear 50s infinite;
+      white-space: nowrap;
+    }
+
+    .hitem {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 24px;
+      white-space: nowrap;
+      font-size: 15px;
+      color: #ffffff;
+    }
+
+    .hitem i {
+      color: #edde00;
+    }
+
+    /* Animation */
+    @keyframes tickerh {
+      0% {
+        transform: translate3d(100%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-400%, 0, 0);
+      }
+    }
+
+    .hmove:hover {
+      animation-play-state: paused;
+    }
+
+    /* ✅ Responsive fix (no wrapping on mobile) */
+    @media (max-width: 768px) {
+
+      .info-container,
+      .topbar {
+        flex-wrap: nowrap !important;
+      }
+
+      .info-bar,
+      .topbar {
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .info-bar::-webkit-scrollbar,
+      .topbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .topbar-left {
+        flex: 0 0 auto;
+      }
+
+      .topbar-right {
+        flex: 1 1 auto;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+  <div class="" style="background-color: #ffa20e;">
+    <div class="topbar container" style="background-color: #ffa20e;">
+      <!-- Left side (Contact Info) -->
+      <div class="topbar-left">
+        <div class="info-bar">
+          <div class="d-flex gap-5 info-container px-2 px-md-3 ">
+            <div class="info-item d-none text-white d-md-block">
+              <i class="fa-solid fa-clock text-white"></i> Mon-Sat, 8.00–4.00
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone text-white  "></i>
+              <a href="tel:+923456388499" class="text-link text-white">+92 300 0695646</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right side (Scrolling text) -->
+      <div class="topbar-right">
+        <div class="hmove">
+
+          <!-- 1st cycle -->
+          <div class="hitem"><i class="fas fa-book"></i> Professional KDP Book Formatting Services</div>
+          <div class="hitem"><i class="fas fa-file-alt"></i> Kindle eBook & Paperback Formatting Experts</div>
+          <div class="hitem"><i class="fas fa-tags"></i> Affordable Rates with Premium Quality Output</div>
+          <div class="hitem"><i class="fas fa-clock"></i> 24-Hour Express Delivery Available</div>
+
+          <!-- 2nd cycle -->
+          <div class="hitem"><i class="fas fa-palette"></i> Clean, Modern & Reader-Friendly Book Layouts</div>
+          <div class="hitem"><i class="fas fa-image"></i> High-Quality Images, Tables & Design Placement</div>
+          <div class="hitem"><i class="fas fa-file-upload"></i> 100% KDP-Approved Upload-Ready Files</div>
+          <div class="hitem"><i class="fas fa-headset"></i> Free Consultation & Support Anytime</div>
+
+          <!-- 3rd cycle -->
+          <div class="hitem"><i class="fas fa-book-reader"></i> Fiction & Non-Fiction Book Formatting</div>
+          <div class="hitem"><i class="fas fa-marker"></i> TOC, Page Numbers, Headers & Typography Setup</div>
+          <div class="hitem"><i class="fas fa-print"></i> Paperback Trim Size Formatting for All Genres</div>
+          <div class="hitem"><i class="fas fa-check-circle"></i> Guaranteed Approval on Amazon KDP</div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <header id="header" class="header sticky-top">
+
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-end">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="assets/img/logo.png" alt="">
+          <!-- Uncomment the line below if you also wish to use a text logo -->
+          <!-- <h1 class="sitename">Medicio</h1>  -->
+        </a>
+
+        <nav id="navmenu" class="navmenu mx-auto">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tabs">Major</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn" href="index.html#appointment">Get a Quote!</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="./assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="container w-75 mx-auto">
+            <h2>✍️ Professional KDP Book Formatting</h2>
+            <p>We turn your manuscript into KDP-ready files (print & eBook). Clean formatting for fiction & non-fiction.
+              Table of Contents, page numbers & typography setup.</p>
+            <a href="#about" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="container w-75 mx-auto">
+            <h2>✍️ Custom KDP Cover Design</h2>
+            <p>Beautiful cover design that sells — tailored to your genre. High-quality graphics & professional layout.
+              Optimized for Amazon KDP display.</p>
+            <a href="#about" class="btn-get-started">Explore Covers</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="container w-75 mx-auto">
+            <h2>✍️ Publishing & Marketing Support</h2>
+            <p>Publishing & marketing support so your book reaches readers. Step-by-step guidance to publish with ease.
+              Get your book in front of the right audience.</p>
+            <a href="#about" class="btn-get-started">Publish Now</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
+          <div class="container w-75 mx-auto">
+            <h2>✍️ Simplify Your KDP Journey</h2>
+            <p>We simplify your KDP publishing journey — from file prep to launch. Fast, reliable, and professional
+              formatting. Perfect for first-time and experienced authors alike.</p>
+            <a href="#about" class="btn-get-started">Start Publishing</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Step 1: Formatting -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-file-alt icon"></i></div>
+              <h4><a href="" class="stretched-link">Formatting</a></h4>
+              <p>Professional layout and typesetting for eBooks and paperbacks, fully KDP-compliant.</p>
+            </div>
+          </div>
+
+          <!-- Step 2: Cover Design -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-book-open icon"></i></div>
+              <h4><a href="" class="stretched-link">Cover Design</a></h4>
+              <p>Eye-catching and genre-appropriate cover designs that sell and meet KDP requirements.</p>
+            </div>
+          </div>
+
+          <!-- Step 3: Proofreading -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-check-circle icon"></i></div>
+              <h4><a href="" class="stretched-link">Proofreading</a></h4>
+              <p>Ensure your manuscript is error-free with professional proofreading and editing services.</p>
+            </div>
+          </div>
+
+          <!-- Step 4: Marketing -->
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-bullhorn icon"></i></div>
+              <h4><a href="" class="stretched-link">Marketing</a></h4>
+              <p>Promote your book effectively with KDP marketing support and guidance to reach readers.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Featured Services Section -->
+
+
+    <!-- Call To Action Section -->
+    <!-- <section id="call-to-action" class="call-to-action section accent-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>In an emergency? Need help now?</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+              <a class="cta-btn" href="#appointment">Make an Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+    <!-- /Call To Action Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p>Helping authors publish professionally on Amazon KDP with ease and efficiency</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="KDP Services">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Your trusted partner in KDP book publishing</h3>
+            <p class="fst-italic">
+              We provide professional KDP book formatting, cover design, proofreading, and marketing support to help
+              authors bring their books to market quickly and efficiently.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>High-quality paperback and eBook formatting ready for Amazon
+                  KDP.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Custom cover designs that attract readers and reflect your
+                  genre.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Proofreading and editing services to ensure error-free
+                  publications.</span></li>
+            </ul>
+            <p>
+              We aim to simplify the KDP publishing process for authors of all levels, providing guidance and support
+              from manuscript preparation to marketing, so your book reaches its audience with maximum impact.
+            </p>
+            <!-- CTA Button -->
+            <a href="#hero" class="btn mt-3" style="background-color:  #ffa20e; color: white;">Start Your KDP
+              Journey</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Total Books Published -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-book flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="120" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Books Published</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Happy Authors -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-user-check flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Happy Authors</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Completed (Books Formatted) -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-file-alt flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Books Formatted</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Awards / Recognitions -->
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-award flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+                  class="purecounter"></span>
+                <p>Awards & Recognitions</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/features.jpg" alt="KDP Features">
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>Professional KDP Services for Authors</h3>
+            <p>We provide end-to-end support for your KDP publishing journey, including formatting, cover design,
+              proofreading, and marketing to ensure your book reaches its audience effectively.</p>
+
+            <!-- Feature 1: Formatting -->
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-file-alt flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Formatting</a></h4>
+                <p>Professional eBook and paperback formatting that is fully KDP-compliant, including table of contents,
+                  pagination, and typography setup.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <!-- Feature 2: Cover Design -->
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-book-open flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Cover Design</a></h4>
+                <p>Custom, eye-catching cover designs tailored to your genre, optimized to attract readers and maximize
+                  sales on KDP.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <!-- Feature 3: Proofreading -->
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-check-circle flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Proofreading</a></h4>
+                <p>Comprehensive proofreading and editing to ensure your manuscript is error-free and professionally
+                  polished.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <!-- Feature 4: Marketing -->
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-bullhorn flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Marketing</a></h4>
+                <p>Effective marketing support to help your book reach the right audience and achieve maximum visibility
+                  on Amazon KDP.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>Comprehensive solutions to help authors publish successfully on Amazon KDP</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Service 1: Formatting -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Book Formatting</h3>
+              </a>
+              <p>Professional formatting for eBooks and paperbacks, fully compliant with Amazon KDP standards, including
+                tables of contents, page layout, and typography.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Service 2: Cover Design -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Cover Design</h3>
+              </a>
+              <p>Custom-designed covers tailored to your book genre, designed to attract readers and increase sales on
+                Amazon.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Service 3: Proofreading -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Proofreading & Editing</h3>
+              </a>
+              <p>Thorough proofreading and editing to ensure your manuscript is polished, professional, and free of
+                errors.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Service 4: Marketing -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Marketing Support</h3>
+              </a>
+              <p>Strategies to promote your book, helping it reach the right audience and boost visibility and sales on
+                KDP.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Service 5: KDP Consultation -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>KDP Consultation</h3>
+              </a>
+              <p>Expert guidance on KDP publishing process, from file preparation to launch strategy, ensuring a smooth
+                and successful publishing journey.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Service 6: File Conversion -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fas fa-file-export"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>File Conversion</h3>
+              </a>
+              <p>Convert your manuscript into Kindle-friendly formats and high-quality PDFs ready for Amazon KDP
+                publishing.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+    <!-- Appointment / Get a Quote Section -->
+    <section id="appointment" class="appointment section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Order Your Book / Get a Quote</h2>
+        <p>Fill out the form below to get your manuscript ready for Amazon KDP publishing</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="p-4 bg-light rounded shadow-sm">
+
+          <form action="forms/appointment.php" method="post" enctype="multipart/form-data"
+            class="row g-3 php-email-form">
+
+            <!-- Name -->
+            <div class="col-md-6">
+              <label class="form-label">Your Name <span class="text-danger">*</span></label>
+              <input type="text" name="name" class="form-control" placeholder="Type your name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6">
+              <label class="form-label">Your E-mail <span class="text-danger">*</span></label>
+              <input type="email" name="email" class="form-control" placeholder="Type your email address" required>
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-6">
+              <label class="form-label">Your Phone</label>
+              <input type="text" name="phone" class="form-control"
+                placeholder="Type your phone number with country code">
+            </div>
+
+            <!-- File Upload -->
+            <div class="col-md-6">
+              <label class="form-label">Upload Manuscript (Optional)</label>
+              <input type="file" name="manuscript" class="form-control">
+              <small class="text-muted">We accept all file formats</small>
+            </div>
+
+            <!-- Services Selection -->
+            <div class="col-md-6">
+              <label class="form-label">Your interests: <span class="text-danger">*</span></label>
+              <div class="form-check d-flex align-items-center">
+                <input class="" type="checkbox" id="ebook">
+                <label class="ms-2" for="ebook">Ebook Formatting</label>
+              </div>
+              <div class="form-check d-flex align-items-center">
+                <input class="" type="checkbox" id="print">
+                <label class="ms-2" for="print">Print Formatting</label>
+              </div>
+              <div class="form-check d-flex align-items-center">
+                <input class="" type="checkbox" id="cover">
+                <label class="ms-2" for="cover">Cover Design</label>
+              </div>
+
+
+
+
+              <!-- Language Selection -->
+              <select class="form-select mt-2" name="language" aria-label="Select Language">
+                <option selected="">Select Language</option>
+                <option value="English">English</option>
+                <option value="Urdu">Urdu</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="col-md-6">
+              <label class="form-label">Message / Special Instructions</label>
+              <textarea class="form-control" name="message" rows="8"
+                placeholder="Tell us about your book or special requests"></textarea>
+            </div>
+
+            <!-- Submit -->
+            <div class="col-12 text-center mt-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your request has been sent successfully. Thank you!</div>
+              <button type="submit" class="btn text-white px-4" style="background-color: #ffa20e;">
+                Submit Request
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Appointment / Get a Quote Section -->
+
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our KDP Services</h2>
+        <p>Explore the range of services we offer to make your book publishing journey smooth and successful</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <!-- Tabs Navigation -->
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column ">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">Ebook Formatting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">Print Formatting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">Cover Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">Proofreading</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">Marketing & Launch</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tabs Content -->
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+
+              <!-- Ebook Formatting -->
+              <div class="tab-pane active show" id="tabs-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Ebook Formatting</h3>
+                    <p class="fst-italic">Professional formatting to make your eBook look polished on Kindle and other
+                      devices.</p>
+                    <p>We ensure your manuscript meets Amazon KDP standards for fonts, spacing, table of contents,
+                      headings, images, and hyperlinks. Your ebook will be ready to publish without any errors.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/images/kdp/ebook-formatting.jpg" alt="Ebook Formatting" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Print Formatting -->
+              <div class="tab-pane" id="tabs-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Print Formatting</h3>
+                    <p class="fst-italic">Expert print layout for paperbacks and hardcovers.</p>
+                    <p>We format your manuscript for print with proper margins, headers, footers, page numbers, and
+                      bleed settings. Ensures a professional look that meets KDP print requirements.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/images/kdp/print-formatting.jpg" alt="Print Formatting" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cover Design -->
+              <div class="tab-pane" id="tabs-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Cover Design</h3>
+                    <p class="fst-italic">Custom cover design that grabs readers’ attention.</p>
+                    <p>We create eye-catching cover designs tailored to your genre, including 3D mockups, color schemes,
+                      typography, and spine/back cover designs. Perfect for both eBooks and print editions.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/images/kdp/cover-design.jpg" alt="Cover Design" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Proofreading -->
+              <div class="tab-pane" id="tabs-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Proofreading</h3>
+                    <p class="fst-italic">Ensure your book is free from errors and reads professionally.</p>
+                    <p>Our team checks for grammar, punctuation, spelling, consistency, and formatting errors. We
+                      provide detailed feedback to make your book polished and ready for publishing.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/images/kdp/proofreading.jpg" alt="Proofreading" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Marketing & Launch -->
+              <div class="tab-pane" id="tabs-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Marketing & Launch</h3>
+                    <p class="fst-italic">Promote your book effectively to reach your target readers.</p>
+                    <p>We assist with Amazon KDP marketing strategies, including keywords, categories, book description
+                      optimization, promotional campaigns, and social media marketing to maximize visibility and sales.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/images/kdp/marketing.jpg" alt="Marketing & Launch" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Tabs Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What our authors and publishers say about our services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper" data-speed="600" data-delay="5000"
+          data-breakpoints='{ "320": { "slidesPerView": 1, "spaceBetween": 40 }, "1200": { "slidesPerView": 3, "spaceBetween": 40 } }'>
+          <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 20
+            }
+          }
+        }
+      </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Publishing my eBook was so easy. The team helped me format and prepare it for Amazon KDP
+                    perfectly.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Ayesha Khan</h3>
+                <h4>Author</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fast and professional service. My print book was ready for sale in no time!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Ali Raza</h3>
+                <h4>Self-Publisher</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The cover design and formatting exceeded my expectations. Highly recommended for first-time
+                    authors.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Sara Ahmed</h3>
+                <h4>Budding Author</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>From manuscript to marketing, the team guided me at every step of my KDP publishing
+                    journey.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Hamza Iqbal</h3>
+                <h4>Writer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Professional, attentive, and creative. My ebook looks amazing and is ready for Amazon
+                    launch.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Nadia Saleem</h3>
+                <h4>Freelance Author</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Our Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Team</h2>
+        <p>Meet the experts who help you publish and design your books</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member text-center">
+              <div class="member-img mb-3">
+                <img src="./assets/img/testimonials/testimonials-4.jpg" class="rounded-circle" alt=""
+                  style="width:100px; height:100px; object-fit:cover;">
+              </div>
+              <div class="member-info">
+                <h4 >Tanveer Ahmad</h4>
+                <span>Chief Publishing Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member text-center">
+              <div class="member-img mb-3">
+                <img src="./assets/img/testimonials/testimonials-2.jpg" class="rounded-circle" alt=""
+                  style="width:100px; height:100px; object-fit:cover;">
+              </div>
+              <div class="member-info">
+                <h4>Ayesha Khan</h4>
+                <span>Book Formatting Specialist</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member text-center">
+              <div class="member-img mb-3">
+                <img src="./assets/img/testimonials/testimonials-5.jpg" class="rounded-circle" alt=""
+                  style="width:100px; height:100px; object-fit:cover;">
+              </div>
+              <div class="member-info">
+                <h4>Ali Raza</h4>
+                <span>Cover Design Expert</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center align-items-center"
+            data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member text-center">
+              <div class="member-img mb-3">
+                <img src="./assets/img/testimonials/testimonials-2.jpg" class="rounded-circle" alt=""
+                  style="width:100px; height:100px; object-fit:cover;">
+              </div>
+              <div class="member-info">
+                <h4>Sara Ahmed</h4>
+                <span>Marketing & Promotion Specialist</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Our Team Section -->
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid"
+                  alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
+                href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid"
+                  alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services & Pricing</h2>
+        <p>Choose the best package for your book formatting and publishing needs</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-3 justify-content-center">
+
+          <!-- Basic Package -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Basic Formatting For Printing</h3>
+              <h4><sup>$</sup>150</h4>
+              <ul>
+                <li>Ideal for short books</li>
+                <li>Simple layout formatting</li>
+                <li>Ready for print</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Get Started</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Standard Package -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <h3>Standard Package</h3>
+              <h4><sup>$</sup>220</h4>
+              <ul>
+                <li>Advanced typesetting</li>
+                <li>Table of Contents (TOC)</li>
+                <li>Print-ready formatting</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Order Now</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <!-- Premium Package -->
+          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Premium eBook Formatting</h3>
+              <h4><sup>$</sup>300</h4>
+              <ul>
+                <li>Complete formatting</li>
+                <li>ePub & Mobi conversion</li>
+                <li>Ready for both print & digital</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#appointment" class="btn-buy">Get in Touch</a>
+              </div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some common questions about our book formatting and publishing services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="faq-container">
+
+              <div class="faq-item">
+                <h3>-What types of books do you format?</h3>
+                <div class="faq-content">
+                  <p>We format both print and eBooks, including novels, textbooks, and short guides. Our services cover
+                    basic and advanced layouts.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>-Do you create eBook versions?</h3>
+                <div class="faq-content">
+                  <p>Yes, we can convert your book to ePub and Mobi formats, ready for Kindle, Apple Books, and other
+                    platforms.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>-Can you design the book cover?</h3>
+                <div class="faq-content">
+                  <p>Absolutely! Our team provides professional cover design for both print and digital editions,
+                    tailored to your book's theme.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>-How long does formatting take?</h3>
+                <div class="faq-content">
+                  <p>Depending on the package and book length, formatting usually takes 3-7 business days. Rush options
+                    are available upon request.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>-Can I make changes after formatting?</h3>
+                <div class="faq-content">
+                  <p>Yes, we offer revisions to ensure your book meets your expectations before final delivery.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>-How do I get started?</h3>
+                <div class="faq-content">
+                  <p>You can reach out using our <a href="#appointment">Get in Touch</a> form to submit your book
+                    details and choose a package.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div><!-- End Faq Column-->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with us for your book formatting and publishing needs</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe style="border:0; width: 100%; height: 370px;"
+          src="https://www.google.com/maps?q=29.5467,71.6276&hl=es;z=14&output=embed" frameborder="0" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Lodhran, Punjab, Pakistan</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+92 300 3000695646</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+                  data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@kdpbookformat.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="500">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <!-- About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="./assets/img/logo.png" alt="">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Lodhran, Punjab, Pakistan</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+92 300 0695646</span></p>
+            <p><strong>Email:</strong> <span>info@kdpbookformat.com</span></p>
+          </div>
+        </div>
+
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#services">Ebook Formatting</a></li>
+            <li><a href="#services">Print Formatting</a></li>
+            <li><a href="#services">Cover Design</a></li>
+            <li><a href="#services">Publishing Guidance</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#appointment">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#contact">Contact Form</a></li>
+            <li><a href="#contact">Location</a></li>
+            <li><a href="#contact">Email Us</a></li>
+            <li><a href="#contact">Call Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">KDPBookFormat</strong> <span>All Rights Reserved</span>
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
