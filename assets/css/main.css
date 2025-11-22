@@ -679,13 +679,17 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 20px;
+  bottom: 80px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
   transition: all 0.4s;
 }
 
