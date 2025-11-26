@@ -1,17 +1,13 @@
 <?php
-// -------------------- Include PHPMailer manually --------------------
-require 'forms/PHPMailer-7.0.0/src/PHPMailer.php';
-require 'forms/PHPMailer-7.0.0/src/SMTP.php';
-require 'forms/PHPMailer-7.0.0/src/Exception.php';
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/autoload.php'; // PHPMailer autoload
 
 header('Content-Type: application/json');
 
 $admin_email = 'info@kdpbookformat.com';
 
-// -------------------- Function to send email --------------------
 function send_mail($to, $to_name, $subject, $body, $file=null){
     $mail = new PHPMailer(true);
     try{
@@ -29,8 +25,7 @@ function send_mail($to, $to_name, $subject, $body, $file=null){
         $mail->Subject = $subject;
         $mail->Body = $body;
 
-        // -------------------- Attach file if exists --------------------
-        if($file && $file['size']>0){
+        if($file){
             $mail->addAttachment($file['tmp_name'],$file['name']);
         }
 
@@ -56,7 +51,7 @@ if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 }
 
 $allowedExt = ['pdf','jpg','jpeg','png','doc','docx','epub','mobi'];
-$maxSize = 100*1024*1024; // 100MB
+$maxSize = 100*1024*1024;
 
 if($attachment && $attachment['size']>0){
     $ext = strtolower(pathinfo($attachment['name'],PATHINFO_EXTENSION));
@@ -93,7 +88,6 @@ $client_body = "<h2>Thank you $name!</h2>
 $admin_sent = send_mail($admin_email,'Admin','New KDP Request',$admin_body,$attachment);
 $client_sent = send_mail($email,$name,'Thank You for Your Request!',$client_body,$attachment);
 
-// -------------------- JSON response for frontend --------------------
 if($admin_sent && $client_sent){
     echo json_encode(['success'=>true,'message'=>'Request sent successfully!']);
 }else{

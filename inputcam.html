@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Registration Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        padding: 20px;
+    }
+    .container {
+        width: 450px;
+        margin: auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+
+    .preview-box {
+        width: 150px;
+        height: 160px;
+        border: 2px dashed #aaa;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        background: #fafafa;
+    }
+
+    .preview-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        display: none;
+    }
+
+    button {
+        padding: 10px 15px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover { background: #0056d6; }
+
+    .options-box, .camera-box {
+        display: none;
+        border: 1px solid #aaa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+        background: #f9f9f9;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form id="studentForm" method="POST">
+
+        <label>Student Name</label>
+        <input type="text" name="name" required>
+
+        <label>Select Student Image</label>
+        <button type="button" onclick="openOptions()">Choose Image</button>
+
+        <!-- PREVIEW BOX -->
+        <div class="preview-box">
+            <img id="preview" alt="Image Preview">
+        </div>
+
+        <input type="file" id="fileInput" accept="image/*" style="display:none;">
+        <input type="hidden" id="capturedImage" name="captured_image">
+
+        <!-- Image Options -->
+        <div id="imageOptions" class="options-box">
+            <strong>Select Image Source</strong><br><br>
+            <button type="button" onclick="chooseFile()">Upload from Computer</button>
+            <button type="button" onclick="openCamera()">Capture from Camera</button>
+        </div>
+
+        <!-- Camera Box -->
+        <div id="cameraBox" class="camera-box">
+            <video id="video" width="280" autoplay></video><br><br>
+            <button type="button" onclick="capturePhoto()">Capture Photo</button>
+            <canvas id="canvas" width="280" height="220" style="display:none;"></canvas>
+        </div>
+
+        <br>
+        <button type="submit">Save Student</button>
+    </form>
+</div>
+
+<script>
+// Open options
+function openOptions() {
+    document.getElementById("imageOptions").style.display = "block";
+}
+
+// ----- Upload From File -----
+function chooseFile() {
+    document.getElementById("fileInput").click();
+    document.getElementById("imageOptions").style.display = "none";
+}
+
+document.getElementById("fileInput").onchange = function () {
+    let file = this.files[0];
+    let reader = new FileReader();
+
+    reader.onload = function (e) {
+        let img = document.getElementById("preview");
+        img.src = e.target.result;
+        img.style.display = "block";
+    };
+    reader.readAsDataURL(file);
+};
+
+// ----- CAMERA -----
+function openCamera() {
+    document.getElementById("cameraBox").style.display = "block";
+    document.getElementById("imageOptions").style.display = "none";
+
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+            document.getElementById("video").srcObject = stream;
+        });
+}
+
+// Capture Photo
+function capturePhoto() {
+    let video = document.getElementById("video");
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+    let imgData = canvas.toDataURL("image/png");
+
+    let preview = document.getElementById("preview");
+    preview.src = imgData;
+    preview.style.display = "block";
+
+    document.getElementById("capturedImage").value = imgData;
+
+    // Stop Camera
+    let stream = video.srcObject;
+    stream.getTracks().forEach(track => track.stop());
+
+    document.getElementById("cameraBox").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+Counter	Sr. No. 	Class 	Session	GR No. 	Admission Date 	Class Roll No.	Name of Student 	Father's Name 	Gender 	Date of Birth 	Mother's Language	Cast 	B. Form No. 	Father's CNIC No. 	Contact No. 	Address 		Tehsil 	District 	Matric Marks out of 1100	Inter Marks out of 1100 	Pictures
+1	6	ADP	2023-25	8	21-08-2023	6	Rubab Rafiq 	Muhammad Rafiq	F	16-01-2005	Sarki	Saharan 	36203-4798609-0	36203-1823240-3	0303-6720124	Bohar Bogy Shah Mouza chak Himta 	Bolan 3	Lodhran 	Lodhran 	749	528	https://drive.google.com/file/d/1KLhUGIt7C3wfiWVMvuC4WJdKeKKNRq8J/view?usp=drive_link

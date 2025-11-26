@@ -240,6 +240,21 @@
         transform: scale(1.1);
       }
     }
+
+
+
+    .toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+
+    .progress {
+      height: 20px;
+      margin-top: 10px;
+      display: none;
+    }
   </style>
 </head>
 
@@ -306,7 +321,7 @@
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn" href="index.html#appointment">Quot!</a>
+        <a class="cta-btn" href="index.html#appointment">Quote!</a>
 
       </div>
 
@@ -316,92 +331,122 @@
 
   <main class="main">
 
-<section id="hero" class="hero section">
-  <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
+    <section id="hero" class="hero section">
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
 
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <img src="./assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-      <div class="container w-75 mx-auto">
-        <h2 style="min-height: 35px;">✍️ Professional KDP Formatting</h2>
-        <p class="px-5">We turn your manuscript into KDP-ready files (print & eBook). Clean formatting for fiction & non-fiction.
-          Table of Contents, page numbers & typography setup.</p>
-        <a href="#appointment" class="btn-get-started">Get Started</a>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="./assets/img/hero-carousel/Header-images-1.webp" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ Professional KDP Formatting</h2>
+            <p class="px-5">We turn your manuscript into KDP-ready files (print & eBook). Clean formatting for fiction &
+              non-fiction.
+              Table of Contents, page numbers & typography setup.</p>
+            <a href="#appointment" class="btn-get-started">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/Header-images-2.webp" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ Custom KDP Cover Design</h2>
+            <p class="px-5">Beautiful cover design that sells — tailored to your genre. High-quality graphics &
+              professional layout.
+              Optimized for Amazon KDP display.</p>
+            <a href="#tabs" class="btn-get-started">Explore Covers</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/Header-images-3.webp" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ Publishing Support</h2>
+            <p class="px-5">Publishing & marketing support so your book reaches readers. Step-by-step guidance to
+              publish with ease.
+              Get your book in front of the right audience.</p>
+            <a href="#appointment" class="btn-get-started">Publish Now</a>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/Header-images-4.webp" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ Simplify Your KDP Journey</h2>
+            <p class="px-5">We simplify your KDP publishing journey — from file prep to launch. Fast, reliable, and
+              professional
+              formatting. Perfect for first-time and experienced authors alike.</p>
+            <a href="#appointment" class="btn-get-started">Start Publishing</a>
+          </div>
+        </div>
+
+
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/Header-images-5.webp" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ slider # 5 text</h2>
+            <p class="px-5">We simplify your KDP publishing journey — from file prep to launch. Fast, reliable, and
+              professional
+              formatting. Perfect for first-time and experienced authors alike.</p>
+            <a href="#appointment" class="btn-get-started">Start Publishing</a>
+          </div>
+        </div>
+
+
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <img src="./assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="container w-75 mx-auto">
+            <h2 style="min-height: 35px;">✍️ Slider # 6 text</h2>
+            <p class="px-5">We simplify your KDP publishing journey — from file prep to launch. Fast, reliable, and
+              professional
+              formatting. Perfect for first-time and experienced authors alike.</p>
+            <a href="#appointment" class="btn-get-started">Start Publishing</a>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <!-- <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a> -->
+
       </div>
-    </div>
+    </section>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-      <div class="container w-75 mx-auto">
-        <h2 style="min-height: 35px;">✍️ Custom KDP Cover Design</h2>
-        <p class="px-5">Beautiful cover design that sells — tailored to your genre. High-quality graphics & professional layout.
-          Optimized for Amazon KDP display.</p>
-        <a href="#tabs" class="btn-get-started">Explore Covers</a>
-      </div>
-    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const slides = document.querySelectorAll('.carousel-item');
 
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-      <div class="container w-75 mx-auto">
-        <h2 style="min-height: 35px;">✍️ Publishing Support</h2>
-        <p class="px-5">Publishing & marketing support so your book reaches readers. Step-by-step guidance to publish with ease.
-          Get your book in front of the right audience.</p>
-        <a href="#appointment" class="btn-get-started">Publish Now</a>
-      </div>
-    </div>
+        function typeText(element, text, delay = 200) { // slower typing
+          element.textContent = '';
 
-    <!-- Slide 4 -->
-    <div class="carousel-item">
-      <img src="./assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
-      <div class="container w-75 mx-auto">
-        <h2 style="min-height: 35px;">✍️ Simplify Your KDP Journey</h2>
-        <p class="px-5">We simplify your KDP publishing journey — from file prep to launch. Fast, reliable, and professional
-          formatting. Perfect for first-time and experienced authors alike.</p>
-        <a href="#appointment" class="btn-get-started">Start Publishing</a>
-      </div>
-    </div>
+          // Create blinking cursor
+          let cursor = element.querySelector('.cursor');
+          if (!cursor) {
+            cursor = document.createElement('span');
+            cursor.classList.add('cursor');
+            cursor.textContent = '_';
+            element.appendChild(cursor);
+          }
 
-    <!-- Carousel Controls -->
-    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-    </a>
+          let i = 0;
+          const typingInterval = setInterval(() => {
+            element.textContent = text.substring(0, i);
+            element.appendChild(cursor); // keep cursor at the end
+            i++;
+            if (i > text.length) clearInterval(typingInterval);
+          }, delay);
+        }
 
-  </div>
-</section>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.carousel-item');
-
-  function typeText(element, text, delay = 200) { // slower typing
-    element.textContent = '';
-
-    // Create blinking cursor
-    let cursor = element.querySelector('.cursor');
-    if (!cursor) {
-      cursor = document.createElement('span');
-      cursor.classList.add('cursor');
-      cursor.textContent = '_';
-      element.appendChild(cursor);
-    }
-
-    let i = 0;
-    const typingInterval = setInterval(() => {
-      element.textContent = text.substring(0, i);
-      element.appendChild(cursor); // keep cursor at the end
-      i++;
-      if (i > text.length) clearInterval(typingInterval);
-    }, delay);
-  }
-
-  // Add CSS for blinking cursor
-  const style = document.createElement('style');
-  style.textContent = `
+        // Add CSS for blinking cursor
+        const style = document.createElement('style');
+        style.textContent = `
     .cursor {
       display: inline-block;
       margin-left: 2px;
@@ -411,35 +456,35 @@ document.addEventListener('DOMContentLoaded', () => {
       50% { opacity: 0; }
     }
   `;
-  document.head.appendChild(style);
+        document.head.appendChild(style);
 
-  // Store original heading texts
-  slides.forEach(slide => {
-    const h2 = slide.querySelector('h2');
-    if (h2) {
-      h2.setAttribute('data-full-text', h2.textContent.trim());
-      h2.textContent = '';
-    }
-  });
+        // Store original heading texts
+        slides.forEach(slide => {
+          const h2 = slide.querySelector('h2');
+          if (h2) {
+            h2.setAttribute('data-full-text', h2.textContent.trim());
+            h2.textContent = '';
+          }
+        });
 
-  // Typing for active slide
-  function handleTyping() {
-    slides.forEach(slide => {
-      if (slide.classList.contains('active')) {
-        const h2 = slide.querySelector('h2');
-        if (h2) typeText(h2, h2.getAttribute('data-full-text'), 200);
-      }
-    });
-  }
+        // Typing for active slide
+        function handleTyping() {
+          slides.forEach(slide => {
+            if (slide.classList.contains('active')) {
+              const h2 = slide.querySelector('h2');
+              if (h2) typeText(h2, h2.getAttribute('data-full-text'), 200);
+            }
+          });
+        }
 
-  // Initial typing for first slide
-  handleTyping();
+        // Initial typing for first slide
+        handleTyping();
 
-  // Carousel slide change event
-  const carousel = document.getElementById('hero-carousel');
-  carousel.addEventListener('slid.bs.carousel', handleTyping);
-});
-</script>
+        // Carousel slide change event
+        const carousel = document.getElementById('hero-carousel');
+        carousel.addEventListener('slid.bs.carousel', handleTyping);
+      });
+    </script>
 
 
 
@@ -521,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div> -->
                 </div>
               </div>
-
+              <!-- 
               <button class="carousel-control-prev" type="button" data-bs-target="#about-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -529,7 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <button class="carousel-control-next" type="button" data-bs-target="#about-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+              </button> -->
 
             </div>
           </div>
@@ -620,7 +665,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="container">
 
-        <div class="row justify-content-around gy-4">
+        <div class="row flex-row-reverse justify-content-around gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
 
             <div id="features-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"
@@ -651,7 +696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div> -->
                 </div>
               </div>
-
+              <!-- 
               <button class="carousel-control-prev" type="button" data-bs-target="#features-carousel"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -661,7 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
+              </button> -->
 
             </div>
           </div>
@@ -800,9 +845,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="p-4 bg-light rounded shadow-sm">
-
-          <form action="forms/appointment.php" method="post" enctype="multipart/form-data"
-            class="row g-3 php-email-form">
+          <form id="kdpForm" action="appointment.php" method="post" enctype="multipart/form-data" class="row g-3">
 
             <div class="col-md-6">
               <label class="form-label">Your Name <span class="text-danger">*</span></label>
@@ -810,61 +853,145 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div class="col-md-6">
-              <label class="form-label">Your E-mail <span class="text-danger">*</span></label>
-              <input type="email" name="email" class="form-control" placeholder="Type your email address" required>
+              <label class="form-label">Your Email <span class="text-danger">*</span></label>
+              <input type="email" name="email" class="form-control" placeholder="Type your email" required>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Your Phone</label>
-              <input type="text" name="phone" class="form-control"
-                placeholder="Type your phone number with country code">
+              <input type="text" name="phone" class="form-control" placeholder="+1234567890">
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Upload Manuscript (Optional)</label>
-              <input type="file" name="manuscript" class="form-control">
-              <small class="text-muted">We accept all file formats</small>
+              <input type="file" name="manuscript" class="form-control" id="manuscript">
+              <small class="text-muted">Max 100MB. Allowed: pdf, jpg, jpeg, png, doc, docx, epub, mobi</small>
+              <div class="mt-2" id="filePreview"></div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:0%">0%</div>
+              </div>
             </div>
 
             <div class="col-md-6">
-              <label class="form-label">Your interests: <span class="text-danger">*</span></label>
-              <div class="form-check d-flex align-items-center">
-                <input class="" type="checkbox" id="ebook">
-                <label class="ms-2" for="ebook">Ebook Formatting</label>
-              </div>
-              <div class="form-check d-flex align-items-center">
-                <input class="" type="checkbox" id="print">
-                <label class="ms-2" for="print">Print Formatting</label>
-              </div>
-              <div class="form-check d-flex align-items-center">
-                <input class="" type="checkbox" id="cover">
-                <label class="ms-2" for="cover">Cover Design</label>
-              </div>
+              <label class="form-label">Your interests:</label>
+              <div class="form-check"><input type="checkbox" name="interests[]" value="Ebook Formatting"
+                  class="form-check-input"><label class="form-check-label">Ebook Formatting</label></div>
+              <div class="form-check"><input type="checkbox" name="interests[]" value="Print Formatting"
+                  class="form-check-input"><label class="form-check-label">Print Formatting</label></div>
+              <div class="form-check"><input type="checkbox" name="interests[]" value="Cover Design"
+                  class="form-check-input"><label class="form-check-label">Cover Design</label></div>
 
-              <select class="form-select mt-2" name="language" aria-label="Select Language">
-                <option selected="">Select Language</option>
+              <select class="form-select mt-2" name="language" required>
+                <option selected disabled>Select Language</option>
                 <option value="English">English</option>
-                <option value="Urdu">Urdu</option>
-                <option value="Other">Other</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Italian">Italian</option>
+                <option value="German">German</option>
+                <option value="Hebrew">Hebrew</option>
+                <option value="Others">Others</option>
               </select>
             </div>
 
             <div class="col-md-6">
               <label class="form-label">Message / Special Instructions</label>
-              <textarea class="form-control" name="message" rows="8"
+              <textarea class="form-control" name="message" rows="5"
                 placeholder="Tell us about your book or special requests"></textarea>
             </div>
 
             <div class="col-12 text-center mt-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your request has been sent successfully. Thank you!</div>
-              <button type="submit" class="btn text-white px-4" style="background-color: #ffa20e;">
-                Submit Request
-              </button>
+              <button type="submit" class="btn text-white px-4" style="background-color: #ffa20e;">Submit
+                Request</button>
             </div>
+
           </form>
         </div>
+
+        <div class="toast-container position-fixed top-0 end-0 p-3"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+          const form = document.getElementById('kdpForm');
+          const toastContainer = document.querySelector('.toast-container');
+          const fileInput = document.getElementById('manuscript');
+          const filePreview = document.getElementById('filePreview');
+          const progress = document.querySelector('.progress');
+          const progressBar = document.querySelector('.progress-bar');
+
+          const allowedExt = ['pdf', 'jpg', 'jpeg', 'png', 'doc', 'docx', 'epub', 'mobi'];
+          const maxSize = 100 * 1024 * 1024; // 100MB
+
+          fileInput.addEventListener('change', function () {
+            const file = fileInput.files[0];
+            filePreview.innerHTML = '';
+            if (file) {
+              const ext = file.name.split('.').pop().toLowerCase();
+              if (!allowedExt.includes(ext)) {
+                showToast(false, 'File type not allowed!');
+                fileInput.value = '';
+                return;
+              }
+              if (file.size > maxSize) {
+                showToast(false, 'File exceeds 100MB!');
+                fileInput.value = '';
+                return;
+              }
+              filePreview.innerHTML = `<strong>Selected file:</strong> ${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+            }
+          });
+
+          form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('POST', form.action, true);
+
+            xhr.upload.onprogress = function (e) {
+              if (e.lengthComputable) {
+                progress.style.display = 'block';
+                const percent = Math.round((e.loaded / e.total) * 100);
+                progressBar.style.width = percent + '%';
+                progressBar.textContent = percent + '%';
+              }
+            };
+
+            xhr.onload = function () {
+              progress.style.display = 'none';
+              try {
+                const data = JSON.parse(this.responseText);
+                showToast(data.success, data.message);
+                if (data.success) form.reset();
+                filePreview.innerHTML = '';
+                progressBar.style.width = '0%';
+                progressBar.textContent = '0%';
+              } catch {
+                showToast(false, 'Server error!');
+              }
+            };
+
+            xhr.onerror = function () { showToast(false, 'Network error!'); };
+
+            xhr.send(formData);
+          });
+
+          function showToast(success, message) {
+            const toastEl = document.createElement('div');
+            toastEl.className = `toast align-items-center text-bg-${success ? 'success' : 'danger'} border-0`;
+            toastEl.setAttribute('role', 'alert');
+            toastEl.setAttribute('aria-live', 'assertive');
+            toastEl.setAttribute('aria-atomic', 'true');
+            toastEl.innerHTML = `
+        <div class="d-flex">
+            <div class="toast-body">${message}</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>`;
+            toastContainer.appendChild(toastEl);
+            const bsToast = new bootstrap.Toast(toastEl, { delay: 5000 });
+            bsToast.show();
+          }
+        </script>
+
+      </div>
       </div>
     </section>
 
@@ -1048,23 +1175,38 @@ document.addEventListener('DOMContentLoaded', () => {
                       <div class="carousel-inner" style="height: 100%;">
 
                         <div class="carousel-item active" style="height: 100%;">
-                          <img src="assets/img/about.jpg" alt="" class="d-block w-100 h-100" style="object-fit: cover;">
+                          <img src="./assets/img/Coverbook_Design/Book cover_batcheditor_fotor.webp" alt=""
+                            class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Kindle Ebook Formatting</h5>
                   </div> -->
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="" class="d-block w-100 h-100"
-                            style="object-fit: cover;">
+                          <img src="./assets/img/Coverbook_Design/Cover No.3_batcheditor_fotor.webp" alt=""
+                            class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Print-Ready Paperback Interior</h5>
                   </div> -->
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="" class="d-block w-100 h-100"
-                            style="object-fit: cover;">
+                          <img src="./assets/img/Coverbook_Design/Cover No.4_batcheditor_fotor.webp" alt=""
+                            class="d-block w-100 h-100" style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Stunning Cover Designs</h5>
+                  </div> -->
+                        </div>
+                        <div class="carousel-item" style="height: 100%;">
+                          <img src="./assets/img/Coverbook_Design/Cover No.5_batcheditor_fotor.webp" alt=""
+                            class="d-block w-100 h-100" style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Stunning Cover Designs</h5>
+                  </div> -->
+                        </div>
+                        <div class="carousel-item" style="height: 100%;">
+                          <img src="./assets/img/Coverbook_Design/Cover No.6_batcheditor_fotor.webp" alt=""
+                            class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Stunning Cover Designs</h5>
                   </div> -->
@@ -1109,23 +1251,44 @@ document.addEventListener('DOMContentLoaded', () => {
                       <div class="carousel-inner" style="height: 100%;">
 
                         <div class="carousel-item active" style="height: 100%;">
-                          <img src="assets/img/about.jpg" alt="" class="d-block w-100 h-100" style="object-fit: cover;">
+                          <img
+                            src="./assets/img/CookBook_Design/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp"
+                            alt="" class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Kindle Ebook Formatting</h5>
                   </div> -->
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="" class="d-block w-100 h-100"
-                            style="object-fit: cover;">
+                          <img
+                            src="./assets/img/CookBook_Design/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting, book (1)_batcheditor_fotor.webp"
+                            alt="" class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Print-Ready Paperback Interior</h5>
                   </div> -->
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="" class="d-block w-100 h-100"
-                            style="object-fit: cover;">
+                          <img
+                            src="./assets/img/CookBook_Design/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting, design (1)_batcheditor_fotor.webp"
+                            alt="" class="d-block w-100 h-100" style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Print-Ready Paperback Interior</h5>
+                  </div> -->
+                        </div>
+
+                        <div class="carousel-item" style="height: 100%;">
+                          <img
+                            src="./assets/img/CookBook_Design/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting, recipe (1)_batcheditor_fotor.webp"
+                            alt="" class="d-block w-100 h-100" style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Stunning Cover Designs</h5>
+                  </div> -->
+                        </div>
+                        <div class="carousel-item" style="height: 100%;">
+                          <img
+                            src="./assets/img/CookBook_Design/food, cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp"
+                            alt="" class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Stunning Cover Designs</h5>
                   </div> -->
@@ -1170,14 +1333,14 @@ document.addEventListener('DOMContentLoaded', () => {
                       <div class="carousel-inner" style="height: 100%;">
 
                         <div class="carousel-item active" style="height: 100%;">
-                          <img src="assets/img/about.jpg" alt="" class="d-block w-100 h-100" style="object-fit: cover;">
+                          <img src="./assets/img/Minimal_Book_Format/Minimal (4).webp" alt="" class="d-block w-100 h-100" style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Kindle Ebook Formatting</h5>
                   </div> -->
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-2.jpg" alt="" class="d-block w-100 h-100"
+                          <img src="./assets/img/Minimal_Book_Format/Minimal (5).webp" alt="" class="d-block w-100 h-100"
                             style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Print-Ready Paperback Interior</h5>
@@ -1185,7 +1348,23 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div class="carousel-item" style="height: 100%;">
-                          <img src="./assets/img/hero-carousel/hero-carousel-3.jpg" alt="" class="d-block w-100 h-100"
+                          <img src="./assets/img/Minimal_Book_Format/Minimal book formatting, book design, book formatting, layout design (1)_batcheditor_fotor.webp" alt="" class="d-block w-100 h-100"
+                            style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Stunning Cover Designs</h5>
+                  </div> -->
+                        </div>
+
+                        <div class="carousel-item" style="height: 100%;">
+                          <img src="./assets/img/Minimal_Book_Format/Minimal book formatting, book design, book formatting, layout design, ebook (1)_batcheditor_fotor.webp" alt="" class="d-block w-100 h-100"
+                            style="object-fit: cover;">
+                          <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
+                    <h5>Stunning Cover Designs</h5>
+                  </div> -->
+                        </div>
+
+                        <div class="carousel-item" style="height: 100%;">
+                          <img src="./assets/img/Minimal_Book_Format/Minimal.webp" alt="" class="d-block w-100 h-100"
                             style="object-fit: cover;">
                           <!-- <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-1 rounded">
                     <h5>Stunning Cover Designs</h5>
@@ -1401,12 +1580,12 @@ document.addEventListener('DOMContentLoaded', () => {
             data-aos="fade-up" data-aos-delay="100">
             <div class="team-member text-center">
               <div class="member-img mb-3">
-                <img src="./assets/img/testimonials/testimonials-4.jpg" class="rounded-circle" alt=""
+                <img src="./assets/img/Team/Manager_Furqan_Asif.png" class="rounded-circle" alt=""
                   style="width:100px; height:100px; object-fit:cover;">
               </div>
               <div class="member-info">
-                <h6>Tanveer Ahmad</h6>
-                <span class="">Chief Publishing Officer</span>
+                <h6>Furqan Asif</h6>
+                <span class="">Manager</span>
               </div>
             </div>
           </div>
@@ -1496,28 +1675,28 @@ document.addEventListener('DOMContentLoaded', () => {
           </script>
           <div class="swiper-wrapper align-items-center">
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid"
+                href="./assets/img/gallery/Book cover_batcheditor_fotor.webp"><img src="./assets/img/gallery/Book cover_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid"
+                href="./assets/img/gallery/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp"><img src="./assets/img/gallery/cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid"
+                href="./assets/img/gallery/Cover No.2_batcheditor_fotor.jpg"><img src="./assets/img/gallery/Cover No.2_batcheditor_fotor.jpg" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid"
+                href="./assets/img/gallery/Cover No.6_batcheditor_fotor.webp"><img src="./assets/img/gallery/Cover No.6_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid"
+                href="./assets/img/gallery/Minimal book formatting, book design, book formatting, layout design (1)_batcheditor_fotor.webp"><img src="./assets/img/gallery/Minimal book formatting, book design, book formatting, layout design (1)_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid"
+                href="./assets/img/gallery/food, cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp"><img src="./assets/img/gallery/food, cookbook, Design cookbook, recipe book, Foodbook, Recipe layout design, book design, formatting (1)_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid"
+                href="./assets/img/gallery/Cover No.4_batcheditor_fotor.webp"><img src="./assets/img/gallery/Cover No.4_batcheditor_fotor.webp" class="img-fluid"
                   alt=""></a></div>
             <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid"
+                href="./assets/img/gallery/Minimal (4).webp"><img src="./assets/img/gallery/Minimal (4).webp" class="img-fluid"
                   alt=""></a></div>
           </div>
           <div class="swiper-pagination"></div>
@@ -1774,7 +1953,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     <div class="container row justify-content-between copyright text-center">
       <div class="col-md-6">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename"><a href="https://kdpbookformat.com/">KDPBookFormat</a> </strong> <span>All Rights
+        <p>© <span>Copyright</span> <strong class="px-1 sitename"><a href="https://kdpbookformat.com/">KDPBookFormat</a>
+          </strong> <span>All Rights
             Reserved</span>
         </p>
       </div>
