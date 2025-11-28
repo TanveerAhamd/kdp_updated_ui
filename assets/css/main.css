@@ -989,8 +989,11 @@ section,
 --------------------------------------------------------------*/
 .featured-services .service-item {
   background-color: var(--surface-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
+  padding: 30px 30px;
   transition: all 0.3s ease-in-out;
   height: 100%;
   position: relative;
@@ -1026,6 +1029,10 @@ section,
   color: var(--heading-color);
   transition: ease-in-out 0.3s;
 }
+.featured-services .service-item h4 ul {
+  color: var(--heading-color);
+  transition: ease-in-out 0.3s;
+}
 
 .featured-services .service-item p {
   line-height: 24px;
@@ -1033,9 +1040,17 @@ section,
   margin-bottom: 0;
   transition: ease-in-out 0.3s;
 }
+.featured-services .service-item ul {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  transition: ease-in-out 0.3s;
+}
 
-.featured-services .service-item:hover h4 a,
+.featured-services .service-item:hover h4 a ,
 .featured-services .service-item:hover .icon i,
+.featured-services .service-item:hover ul,
+.featured-services .service-item:hover ul li i,
 .featured-services .service-item:hover p {
   color: var(--contrast-color);
 }
@@ -1070,25 +1085,28 @@ section,
   color: var(--default-color);
 }
 
-.call-to-action .cta-btn {
+.cta-btn-get_started {
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 40px;
+  padding: 6px 30px;
   border-radius: 4px;
   transition: 0.3s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
+  border: 2px solid var(--accent-color);
   color: var(--contrast-color);
+  background-color: var(--accent-color);
 }
 
-.call-to-action .cta-btn:hover {
-  background: var(--contrast-color);
+.cta-btn-get_started:hover {
+  background-color: var(--contrast-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
 }
+
+
 
 /*--------------------------------------------------------------
 # About Section
