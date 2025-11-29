@@ -302,6 +302,20 @@
       }
     }
   </style>
+
+  <style>
+    .feature-box h6 {
+      font-size: 12px;
+      /* mobile */
+    }
+
+    @media (min-width: 768px) {
+      .feature-box h6 {
+        font-size: 18px;
+        /* md and above */
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -353,7 +367,7 @@
 
       <div class="container position-relative d-flex align-items-center justify-content-end">
         <a href="index.html" class="  logo d-flex align-items-center me-auto">
-          <img src="assets/img/logo.png" alt="">
+          <img class="" src="assets/img/logo.png" alt="">
         </a>
 
         <nav id="navmenu" class="navmenu mx-auto">
@@ -554,28 +568,32 @@
 
           <div class="col-md-6">
 
-            <div class="row mx-3 mx-md-0">
-              <div class=" col-4">
+            <div class="row mx-0 mx-md-3 justify-content-center">
+              <div class="col-4">
                 <div class="icon-box feature-box" data-aos="fade-up">
                   <i class="fas fa-check-circle"></i>
-                  <h6>Quick<br> Response</h6>
+                  <span>Quick <br>Response</span>
+                  <!-- <h6 class="fs-6 fs-md-5">Quick<br> Response</h6> -->
                 </div>
               </div>
 
               <div class="col-4">
                 <div class="icon-box feature-box" data-aos="fade-up">
                   <i class="fas fa-shipping-fast"></i>
-                  <h6>Fast <br> Delivery</h6>
+                  <span>Fast<br>Delivery</span>
+                  <!-- <h6 class="fs-6 fs-md-5">Fast <br> Delivery</h6> -->
                 </div>
               </div>
 
               <div class="col-4">
                 <div class="icon-box feature-box" data-aos="fade-up">
                   <i class="fas fa-sync-alt"></i>
-                  <h6>Unlimited <br> Revisions</h6>
+                  <span>Unlimited<br>Revisions</span>
+                  <!-- <h6 class="fs-6 fs-md-5">Unlimited <br> Revisions</h6> -->
                 </div>
               </div>
             </div>
+
           </div>
 
         </div>
@@ -584,7 +602,7 @@
       <div class="container">
         <div class="row gy-4">
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class=" col-12 col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="fas fa-tablet-alt icon"></i></div>
 
@@ -605,7 +623,7 @@
             </div>
           </div>
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon"><i class="fas fa-print icon"></i></div>
 
@@ -627,7 +645,7 @@
             </div>
           </div>
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-4 col-md-6 " data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
               <div class="icon"><i class="fas fa-book-open icon"></i></div>
 
@@ -995,26 +1013,52 @@
                 <div class="progress-bar" role="progressbar" style="width:0%">0%</div>
               </div>
             </div>
+<div class="col-md-6">
+  <label class="form-label">Your interests:</label>
 
-            <div class="col-md-6">
-              <label class="form-label">Your interests:</label>
-              <div class="form-check"><input type="checkbox" name="interests[]" value="Ebook Formatting"
-                  class="form-check-input"><label class="form-check-label">Ebook Formatting</label></div>
-              <div class="form-check"><input type="checkbox" name="interests[]" value="Print Formatting"
-                  class="form-check-input"><label class="form-check-label">Print Formatting</label></div>
-              <div class="form-check"><input type="checkbox" name="interests[]" value="Cover Design"
-                  class="form-check-input"><label class="form-check-label">Cover Design</label></div>
+  <div class="row">
+    <!-- 1 & 2 -->
+    <div class="col-6">
+      <div class="form-check">
+        <input type="checkbox" name="interests[]" value="Cookbook Formatting Design" class="form-check-input">
+        <label class="form-check-label">Cookbook Formatting Design</label>
+      </div>
+    </div>
 
-              <select class="form-select mt-2" name="language" required>
-                <option selected disabled>Select Language</option>
-                <option value="English">English</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Italian">Italian</option>
-                <option value="German">German</option>
-                <option value="Hebrew">Hebrew</option>
-                <option value="Others">Others</option>
-              </select>
-            </div>
+    <div class="col-6">
+      <div class="form-check">
+        <input type="checkbox" name="interests[]" value="Print Formatting and PDF Design" class="form-check-input">
+        <label class="form-check-label">Print Formatting & PDF Design</label>
+      </div>
+    </div>
+
+    <!-- 3 & 4 -->
+    <div class="col-6 mt-1">
+      <div class="form-check">
+        <input type="checkbox" name="interests[]" value="Minimal Book Formatting for KDP" class="form-check-input">
+        <label class="form-check-label">Minimal Book Design for KDP</label>
+      </div>
+    </div>
+
+    <div class="col-6 mt-1">
+      <div class="form-check">
+        <input type="checkbox" name="interests[]" value="Cover Design" class="form-check-input">
+        <label class="form-check-label">Cover Design</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language Select -->
+  <select class="form-select mt-3" name="language" required>
+    <option selected disabled>Select Language</option>
+    <option value="English">English</option>
+    <option value="Spanish">Spanish</option>
+    <option value="Italian">Italian</option>
+    <option value="German">German</option>
+    <option value="Hebrew">Hebrew</option>
+    <option value="Others">Others</option>
+  </select>
+</div>
 
             <div class="col-md-6">
               <label class="form-label">Message / Special Instructions</label>
@@ -1132,20 +1176,23 @@
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column ">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-ebook">Ebook Formatting</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-cookbook">Cookbook Formatting  & Layout Desings</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-print">Print Formatting</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-print">Print Formatting  & PDF Designs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-cover">Cover Design</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-minimal">Minimal Book Formatting for KDP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-cookbook">Cookbook Formatting</a>
+                <a class="nav-link " data-bs-toggle="tab" href="#tabs-ebook">Ebook Designs</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-minimal">Minimal Book Formatting</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tabs-cover">Cover Designs</a>
               </li>
+
+
               <!-- <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tabs-mockup">Mockup Design</a>
               </li> -->
@@ -1219,7 +1266,7 @@
               <div class="tab-pane" id="tabs-print">
                 <div class="row">
                   <div class="col-lg-7 details order-2 order-lg-1">
-                    <h3 class="mt-3 mt-md-0">Print Formatting</h3>
+                    <h3 class="mt-3 mt-md-0">Print Formatting  & PDF Designs</h3>
                     <p class="fst-italic">Clean interior layout designed for KDP paperback printing.</p>
 
                     <ul style="list-style-type: none;" class="ps-0">
@@ -1356,7 +1403,7 @@
               <div class="tab-pane" id="tabs-cookbook">
                 <div class="row">
                   <div class="col-lg-7 details order-2 order-lg-1">
-                    <h3 class="mt-3 mt-md-0">Cookbook Formatting</h3>
+                    <h3 class="mt-3 mt-md-0">Cookbook Formatting  & Layout Desings</h3>
                     <p class="fst-italic">Clean and attractive recipe layout perfect for cookbooks.</p>
 
                     <ul style="list-style-type: none;" class="ps-0">
@@ -1438,7 +1485,7 @@
               <div class="tab-pane" id="tabs-minimal">
                 <div class="row">
                   <div class="col-lg-7 details order-2 order-lg-1">
-                    <h3 class="mt-3 mt-md-0">Minimal Book Formatting</h3>
+                    <h3 class="mt-3 mt-md-0">Minimal Book Formatting  for KDP</h3>
                     <p class="fst-italic">A clean, modern, and easy-to-read formatting style.</p>
 
                     <ul style="list-style-type: none;" class="ps-0">
@@ -1963,14 +2010,14 @@
           </div>
 
           <div class="col-lg-6">
-            <section id="contact" class="contact pt-0 pb-0 section" data-aos="fade-up" data-aos-delay="100">
+            <section id="contact" class="contact pt-4 pt-md-0 pb-0 section" data-aos="fade-up" data-aos-delay="100">
 
               <div class="section-title" data-aos="fade-up">
                 <h2>Contact</h2>
                 <p>Get in touch with us for your book formatting and publishing needs</p>
               </div>
               <form action="forms/contact.php" method="post" class="php-email-form shadow-none" data-aos="fade-up"
-                data-aos-delay="300">
+                data-aos-delay="100">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
